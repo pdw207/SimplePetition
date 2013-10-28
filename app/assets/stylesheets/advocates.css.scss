@@ -1,0 +1,177 @@
+// Place all the styles related to the Advocates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, table{
+	margin:50px auto; padding:40px;
+
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.center{
+	width:200px;
+	margin:20px auto; 
+	
+
+}
+table{
+
+	font-size: 1em	;
+	td, th{
+		padding: 10px 20px;
+	}
+	
+	th, td{
+		text-align: center;
+
+	}
+	small{
+	font-size: .8em;
+	}	
+	 td.wide,  th.wide{
+		width: 140px;
+	}
+
+}
+
+h1{
+	line-height: 1em;
+	text-align: center;
+	color:#696969;
+}
+
+a{
+	color:#2270B7;
+}
+label{
+	color:#696969;
+	&:first-child{
+		padding-top:20px;
+	}
+}
+.petition-letter {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	position: relative;
+	font-family: Courier,"Courier New",monospace;
+	border-radius: 3px;
+	
+	border: 1px solid #E1E5E5;
+	color: #191D1D;
+	padding-bottom: 40px;
+
+	p{
+		padding: 0px 60px; 
+	}
+
+	background: rgb(255,254,252); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,254,252,1) 0%, rgba(255,254,249,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,254,252,1)), color-stop(100%,rgba(255,254,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,254,252,1) 0%,rgba(255,254,249,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,254,252,1) 0%,rgba(255,254,249,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,254,252,1) 0%,rgba(255,254,249,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,254,252,1) 0%,rgba(255,254,249,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffefc', endColorstr='#fffef9',GradientType=0 ); /* IE6-9 */
+
+	.address{
+
+		p{ 
+		
+		line-height: 0px;
+		}
+
+		p:first-child{
+		padding-top:40px;	
+		}
+
+		p:last-child{
+		padding-bottom:20px;	
+		}
+	}
+	.message{
+
+	}
+}
+.petition-letter:after, .petition-letter:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	height: 0;
+	width: 250px;
+	bottom: 8px;
+	-webkit-box-shadow: 0 0 10px 8px rgba(25, 29, 29, 0.2);
+	-moz-box-shadow: 0 0 10px 8px rgba(25,29,29,0.2);
+	box-shadow: 0 0 10px 8px rgba(25, 29, 29, 0.2);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+
+
+}
+.petition-letter:after{
+	right: 15px;
+	bottom: 0px;
+	-webkit-transform: rotate(3deg);
+} 
+
+.petition-letter:before {
+	left: 15px;
+	bottom: 0px;
+	-webkit-transform: rotate(-3deg);
+}
+
+.add_name{
+	padding: 30px 0px;
+	font-size: 1.4em;
+}
+
+
+	
+.signatures{
+	padding: 10px 60px;
+
+	font-family: 'Over the Rainbow', cursive;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	white-space:nowrap;
+	column-gap:normal	;
+	-moz-column-gap:normal	; /* Firefox */
+	-webkit-column-gap:normal	;
+}
+
+.zipcode{
+	padding: 0 -webkit-calc(50% - 50px);
+	padding: 0 -moz-calc(50% - 50px);
+	padding: 0 calc(50% - 50px);
+}
+.readmore-js-toggle{
+/*	text-align: right;
+	position: absolute;
+	bottom: 30px;
+	right:40px;*/
+	padding-left: 60px;
+}
+.actions{
+	padding: 30px 0px;
+}
+
+
+.notice {
+	border: solid 1px; margin: 40px auto; padding: 20px; 
+	background-color:#191D1D; color: white; width:700px; 
+	text-align: center;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

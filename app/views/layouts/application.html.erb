@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advocacy</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+   <link href='http://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Over+the+Rainbow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<%= yield %>
+  <script>
+    $('article').readmore({maxHeight: 0, moreLink: '<a href="#">View Signatures</a>'});
+  </script>
+</body>
+</html>

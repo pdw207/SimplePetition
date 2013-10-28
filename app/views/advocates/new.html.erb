@@ -1,0 +1,26 @@
+<%= form_for(@advocate) do |f| %>
+
+  <% if @advocate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@advocate.errors.count, "error") %> prohibited your information from being saved:</h2>
+
+      <ul>
+      <% @advocate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="jumbotron">
+    <h1>Support our Campagin</h1>
+    <p>First we need your zipcode to find your local representatives</p>
+	<p class="zipcode"><%= f.number_field :zip_code, class:"form-control",style: "width:100px; text-align:center;", placeholder:"Zipcode" %></p> 
+    <p><%= f.submit "View Your Representatives", class:"btn btn-primary" %></p> 
+
+  </div>
+
+
+  <div class="actions">
+  </div>
+<% end %>
+

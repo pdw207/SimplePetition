@@ -1,0 +1,32 @@
+<h2 style="text-align:center;">Your Representatives from <%= @advocate.state_name %></h2>
+<p class="<%= "notice" if params[:notice] %>" ><%= params[:notice] %></p>
+
+<table >
+  <thead>
+    <tr>
+       <th>Representative</th>
+       <th>Party</th>
+       <th>Address</th>
+       <th>Phone</th>
+      <th class="wide">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+       <% @advocate.get_raw_data_from_sunglight.each do |x| %>
+      <tr>
+    
+        
+        <td><%= "#{x["title"]} #{x["first_name"]} #{x["last_name"]}" %></td>
+        <td><%= x["party"] =="R" ? "Republican" : "Democrat" %></td>
+        <td><%= x["office"] %><br> Washington DC 2051</td>
+        <td><%= x["phone"].strip %></td>
+        <td class="wide"><small><a href="<%= x["contact_form"]  %>" target="_blank">Contact by Email</a><br> <a href="https://twitter.com/<%=x["twitter_id"]%>"target="_blank">Follow on Twitter</a></small></td>
+      </tr>
+      <% end %>
+
+  </tbody>
+</table>
+
+<div class="add_name"><center>
+	<%= link_to 'Now to the Petition', advocates_path  unless params[:notice] %>
+</center><div>

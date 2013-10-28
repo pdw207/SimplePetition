@@ -1,0 +1,50 @@
+<h1>Lorem ipsum dolor sit amet, consectetur adipispor in</h1>
+
+<div class="petition-letter">
+  <div class="address">
+    <p>To: <%= grab_one_rep %></p>
+    <p><%= rep_address %></p>
+    <p>Washington DC 2051</p>
+  </div>
+  
+  <div class="message">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+   
+
+     
+
+      <div>
+     <article class="readmore-js-section">
+      <div class="signatures multi-column">
+        <% @advocates.each do |advocate| %>
+        <%= advocate.full_name unless advocate.full_name.length < 5 %><br>
+        <% end %>
+      </div></div>
+    </article> 
+
+
+
+  </div>
+</div>
+
+<div class="add_name">
+<%= link_to 'Sign the Petition', edit_advocate_path(@advocates.last) %> 
+</div>

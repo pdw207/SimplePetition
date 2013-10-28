@@ -1,0 +1,38 @@
+<h1>Sign my Name to the Petition</h1>
+
+<%= form_for(@advocate) do |f| %>
+
+  <% if @advocate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@advocate.errors.count, "error") %> prohibited your information from being saved:</h2>
+
+      <ul>
+      <% @advocate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="center">
+
+  <div class="form-group">
+    <%= f.label :first_name,"First Name"%><br>
+    <%= f.text_field :first_name, class:"form-control",style: "width:200px;"   %>
+  </div>
+  <div class="form-group">
+    <%= f.label :last_name, "Last Name" %><br>
+    <%= f.text_field :last_name, class:"form-control",style: "width:200px;" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :zip_code, "Zip" %><br>
+    <%= f.number_field :zip_code, class:"form-control",style: "width:200px;" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign My Name to the Petition", class:"btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= link_to 'See My Reps', @advocate%> |
+<%= link_to 'Read the Petition', advocates_path %>
+</div>
