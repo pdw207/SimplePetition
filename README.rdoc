@@ -2,7 +2,7 @@
 
 Overview
 -----------
-This app is a very simple use of the congress gem. A user is promted for a zipcode returns a list representatives and contact information. Then user can read and add name to a petition.
+This app is a very simple use of the congress gem. A user enters thier zipcode to view list representatives and contact information. Then the user can read and add name to the petition and contact thier rep directly.
 
 Before you start
 -------------
