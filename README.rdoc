@@ -2,4 +2,4 @@
 
 This app is a very simple use of the congress gem. Register for a key at sunlightfoundation.com first. In the Advocate model update the Congress.key
 
-![Alt text](/path/to/img.jpg)
+![Petition 1](/app/assets/images/petition1.png)
