@@ -1,6 +1,7 @@
 == README
 
---overview
+overview
+-----------
 This app is a very simple use of the congress gem. A user is promted for a zipcode returns a list representatives and contact information. Then user can read and add name to a petition.
 
 --before you start
