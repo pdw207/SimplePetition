@@ -2,4 +2,5 @@
 
 This app is a very simple use of the congress gem. Register for a key at sunlightfoundation.com first. In the Advocate model update the Congress.key
 
-![alt tag](https://raw.github.com/pdw207/SimplePetition/blob/master/app/assets/images/petition1.png)
+![petition1](https://raw.github.com/pdw207/SimplePetition/master/app/assets/images/petition1.png)
+           
