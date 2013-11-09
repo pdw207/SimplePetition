@@ -1,14 +1,16 @@
 == README
 
-overview
+Overview
 -----------
 This app is a very simple use of the congress gem. A user is promted for a zipcode returns a list representatives and contact information. Then user can read and add name to a petition.
 
---before you start
+Before you start
+-------------
 Register for a key at sunlightfoundation.com first. In the Advocate model update the Congress.key
 
 
--- screenshots
+Screenshots
+---------------
 https://raw.github.com/pdw207/SimplePetition/master/app/assets/images/petition1.png
 https://raw.github.com/pdw207/SimplePetition/master/app/assets/images/petition2.png
 https://raw.github.com/pdw207/SimplePetition/master/app/assets/images/petition3.png
